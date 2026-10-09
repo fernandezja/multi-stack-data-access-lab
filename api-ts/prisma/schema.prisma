@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Jedi {
+  jediId    Int    @id @default(autoincrement()) @map("JediId")
+  name      String @db.VarChar(200) @map("Name")
+  jediTypeId Int  @map("JediTypeId")
+
+  @@map("Jedi")
+}

@@ -1,0 +1,22 @@
+USE StarwarsAcademy;
+INSERT INTO Jedi (Name, JediTypeId) 
+VALUES ('Luke Skywalker',2),
+       ('Leia Organa',2),
+       ('Yoda',3),
+       ('Obi-Wan Kenobi',3),
+       ('Mace Windu',3),
+       ('Ahsoka Tano',2),
+       ('Qui-Gon Jinn',3),
+       ('Anakin Skywalker',2),
+       ('Plo Koon',3),
+       ('Kit Fisto',3),
+       ('Shaak Ti',3),
+       ('Ki-Adi-Mundi',3),
+       ('Luminara Unduli',3),
+       ('Barriss Offee',1),
+       ('Ezra Bridger',1),
+       ('Kanan Jarrus',2),
+       ('Cal Kestis',2),
+       ('Rey Skywalker',2),
+       ('Finn',1),
+       ('Depa Billaba',3);

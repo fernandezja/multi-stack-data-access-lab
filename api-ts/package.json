@@ -1,0 +1,1 @@
+{"name":"jedi-api-ts","private":true,"scripts":{"build":"tsoa spec && tsc","start":"node dist/server.js"},"dependencies":{"@prisma/client":"6.16.2","@scalar/express-api-reference":"0.8.12","express":"5.1.0","zod":"4.1.5","cors":"2.8.5"},"devDependencies":{"@types/cors":"2.8.19","@types/express":"5.0.3","@types/node":"24.3.0","prisma":"6.16.2","tsoa":"6.6.0","typescript":"5.9.2"}}

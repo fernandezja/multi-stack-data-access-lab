@@ -311,6 +311,16 @@ FakesAssemblies/
 .ntvs_analysis.dat
 node_modules/
 
+# JavaScript/TypeScript and Astro generated artifacts
+**/dist/
+**/.astro/
+*.tsbuildinfo
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
 # Visual Studio 6 build log
 *.plg
 

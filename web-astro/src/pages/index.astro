@@ -1,0 +1,47 @@
+---
+import { apiUrls } from '../config/api';
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Jedi Data Access</title>
+  </head>
+
+  <body data-dashboard data-api-ts={apiUrls.ts} data-api-net={apiUrls.net}>
+    <h1>Jedi Data Access Lab</h1>
+
+    <p>Express + Prisma and .NET + EF Core over MariaDB.</p>
+
+    <label for="provider">Provider</label>
+    <select id="provider">
+      <option value="ts">TypeScript / Express / Prisma</option>
+      <option value="net">.NET 10 / Minimal API / EF Core</option>
+    </select>
+
+    <button id="load" type="button">Cargar Jedi</button>
+
+    <p>
+      <a id="scalar" target="_blank" rel="noreferrer">Scalar</a>
+      ·
+      <a id="openapi" target="_blank" rel="noreferrer">OpenAPI</a>
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <pre id="status"></pre>
+
+    <script src="../scripts/dashboard.ts"></script>
+  </body>
+</html>
